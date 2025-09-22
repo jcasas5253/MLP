@@ -1,0 +1,931 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <style>
+p {
+    font-size: 16px !important;
+}
+
+li {
+    font-size: 16px !important;
+}
+
+h1, h2, h3 {
+    font-size: 40px !important;
+}
+
+.carousel-indicators .active {
+    background-color:#000 !important;
+}
+
+            .insurance-hero {
+        padding: 40px 0;
+        padding-top: 0;
+    }
+
+    .insurance-hero .logo img {
+        max-height: 60px;
+    }
+
+    .insurance-hero .contact {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #000;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* vertical align with logo */
+        height: 100%;
+    }
+
+    .insurance-hero .contact strong {
+        font-size: 1.25rem;
+        color: #0055a5;
+    }
+
+    .insurance-hero h2 {
+        font-size: 44px;
+        font-weight: bold;
+        color: #b21e1e;
+        margin-bottom: 15px;
+        padding-right: 100px;
+    }
+
+    .insurance-hero p {
+        font-size: 14px;
+        color: #333;
+        margin-bottom: 20px;
+        padding-right: 100px;
+    }
+
+    .insurance-hero .cta {
+        font-weight: bold;
+        color: #b21e1e;
+        font-size: 44px;
+        margin-bottom: 10px;
+    }
+
+    .insurance-hero .form-inline .form-control {
+        margin-right: 10px;
+    }
+
+    .insurance-hero .btn-primary {
+        background-color: #002f6c;
+        border-color: #002f6c;
+        font-weight: 600;
+        padding: 10px 20px;
+    }
+
+    /* Icon Boxes */
+    .icon-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .icon-img {
+        max-width: 80px; /* adjust size as needed */
+        height: auto;
+        margin-bottom: 8px;
+    }
+
+    .icon-text {
+        font-size: 1.1rem;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .hero-headline {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #a10000;
+  margin-bottom: 20px;
+}
+
+.hero-body {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.hero-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero-form input {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.hero-form button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #003366;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.hero-form button:hover {
+  background-color: #002244;
+}
+
+   .component-container {
+            font-family: Arial, sans-serif;
+            padding: 50px 20px;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .main-title {
+            color: #d82b3a;
+            font-weight: bold;
+            font-size: 44px;
+            margin-bottom: 3rem;
+        }
+
+        .step-list {
+            /* This flex container will center the entire list of steps */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .step-item {
+            display: flex;
+            align-items: center;
+            /* Align the items to the left within their container */
+            justify-content: flex-start;
+            margin-bottom: 1.5rem;
+            /* Remove width: fit-content to let the flexbox handle the sizing */
+        }
+
+        .step-number {
+            width: 40px;
+            height: 40px;
+            border: 2px solid rgb(153, 4, 3);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #d82b3a;
+            font-weight: bold;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .step-text {
+            font-size: 25px;
+            color: #333;
+            text-align: left;
+        }
+        
+        .form-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin-top: 3rem;
+        }
+
+        .form-select, .form-control {
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .btn-primary {
+            background-color: #1a4f78;
+            border-color: #1a4f78;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+ .why-choose-section {
+        position: relative;
+        padding: 60px 0;
+        background: url('images/MLP6.png') no-repeat center center;
+        background-position: top;
+        background-size: cover;
+        color: #333;
+        z-index: 1;
+    }
+
+    /* Overlay for opacity */
+    .why-choose-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.8); /* adjust opacity here */
+        z-index: -1;
+    }
+
+    /* Section Titles and Text */
+    .why-choose-section .section-title {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #000; /* black text */
+    }
+
+    .why-choose-section .section-text {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #000; /* black text */
+    }
+
+    .section-title {
+        font-weight: bold !important;
+    }
+
+    /* Feature Box */
+    .feature-box {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+        margin-bottom: 20px;
+        position: relative;
+        padding-top: 30px; /* content below blue bar */
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        border-left: 2px solid;
+        border-right: 2px solid;
+        border-bottom: 2px solid;
+    }
+
+    /* Blue bar at the very top */
+    .feature-box::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 10px;
+        width: 100%;
+        background: #0055a5; /* Blue bar */
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    /* Feature content side-by-side layout */
+    .feature-content {
+        display: flex;
+        align-items: center; /* vertically center image and title */
+        text-align: left; /* description below remains left-aligned */
+        gap: 15px; /* space between image and title */
+        flex-wrap: wrap; /* allows wrapping on smaller screens */
+    }
+
+    .feature-icon {
+        margin-bottom: 0; /* remove bottom margin since side-by-side */
+    }
+
+    .feature-icon img {
+        width: 80px;
+        height: 80px;
+        object-fit: contain;
+    }
+
+    .feature-title {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+
+    .feature-description {
+        width: 100%; /* ensures description goes full width below image+title */
+        font-size: 14px;
+        line-height: 1.5;
+        margin-top: 5px; /* spacing above description */
+    }
+
+        .quote-section {
+        padding: 50px 0;
+        padding-top: 100px;
+        background-color: #fff;
+    }
+
+    .quote-box {
+        display: flex;
+        align-items: center;
+        border-radius: 4px;
+        padding: 20px;
+        max-width: 900px;
+        margin: 0 auto;
+        background: #fff;
+    }
+
+    .quote-box .quote-image {
+        flex: 0 0 200px;
+        margin-right: 20px;
+    }
+
+    .quote-box .quote-image img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .quote-box .quote-content {
+        flex: 1;
+    }
+
+    .quote-box h3 {
+        font-weight: 700;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .quote-box p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .quote-form {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .quote-form select,
+    .quote-form input {
+        padding: 10px;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        flex: 1;
+        min-width: 120px;
+    }
+
+    .quote-form button {
+        background-color: #003366;
+        color: #fff;
+        font-weight: bold;
+        border: none;
+        border-radius: 6px;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    .quote-form button:hover {
+        background-color: #002244;
+    }
+
+    /* Responsive adjustments for small screens */
+    @media (max-width: 768px) {
+        .feature-content {
+            flex-direction: column; /* stack image and title on small screens */
+            text-align: center;
+        }
+        .feature-description {
+            margin-top: 10px;
+        }
+    }
+    </style>
+  </head>
+  <body>
+   
+    <!-- Header -->
+
+<div class="insurance-hero">
+    <div class="container" style="margin-left: 90px;">
+        <div class="row align-items-center">
+            <!-- Left Column - Content -->
+            <div class="col-md-10">
+                <!-- Logo & Contact Row -->
+                <div class="row align-items-center" style="margin-bottom: 30px; padding-top: 50px;">
+                    <div class="col-xs-8 logo">
+                        <img src="images/MLPLogo.png" alt="Mercury Insurance Logo" style="max-height: 50px;">
+                    </div>
+                    <div class="col-xs-4 contact" style="font-size: 12px;">
+                        Call us today:
+                        <strong style="color:#000; font-size: 16px;">(855) 247-5847</strong>
+                    </div>
+                </div>
+
+                <!-- Icon Row -->
+                <div class="row text-center" style="margin-bottom: 30px;">
+                    <div class="col-xs-4 icon-box">
+                        <img src="images/MLPIcon4.png" alt="Auto" class="icon-img">
+                        <div class="icon-text" style="font-size: 14px;">AUTO</div>
+                    </div>
+                    <div class="col-xs-4 icon-box">
+                        <img src="images/MLPIcon5.png" alt="Home" class="icon-img">
+                        <div class="icon-text" style="font-size: 14px;">HOME</div>
+                    </div>
+                    <div class="col-xs-4 icon-box">
+                        <img src="images/MLPIcon6.png" alt="About" class="icon-img">
+                        <div class="icon-text" style="font-size: 14px;">ABOUT</div>
+                    </div>
+                </div>
+
+                <!-- Main Heading -->
+                <h2>Mercury Insurance, over 50 years of saving you money</h2>
+                <p>When you're able to save money and maintain quality coverage, everybody comes out a winner. Whether you're looking for auto insurance or just about any other insurance, there is something to fit your budget with Mercury.</p>
+
+                <!-- CTA -->
+                <div class="cta">Get a free online quote</div>
+                <p>It only takes a few minutes. Results are sent straight to your inbox.</p>
+
+                <!-- Form -->
+                <form class="form-inline">
+                    <select class="form-control" style="margin-right: 10px; margin-bottom: 10px;">
+                        <option>Auto</option>
+                        <option>Home</option>
+                        <option>Other</option>
+                    </select>
+                    <input type="text" class="form-control" placeholder="Zip Code" style="margin-right: 10px; margin-bottom: 10px;">
+                    <button type="submit" class="btn btn-primary" style="margin-bottom: 10px;">START MY QUOTE</button>
+                </form>
+            </div>
+
+            <!-- Right Column - Hero Image -->
+            <div class="col-md-2 hero-image-container">
+                <img src="images/MLP7.png" alt="Happy family in car" class="hero-image">
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------------------------------------------------------------------------------------------------------------------------------->
+
+<!-- Three Column Img Text -->
+<section class="three-column-section py-5">
+
+  <div class="container">
+    <div class="row text-center" style="padding-top: 75px;">
+      <div class="col-md-4 mb-4">
+        <img src="images/MLP 1.png" alt="" class="img-fluid mb-3" style="color: not-a-color; height: 125px; width: 125px; border-radius: 50%; object-fit: cover; border: 2px solid black;">
+        <h3 style="padding-top: 10px; font-weight: bold; margin-bottom: 0; color: rgb(153, 4, 3); font-size: 24px !important;">55+</h3>
+        <h3 style="font-weight: bold; margin-top: 0; color: rgb(153, 4, 3); font-size: 24px !important;">YEARS</h3>
+        <p style="font-size: 16px; line-height: 12px; color: black;">of insurance experience <br></br> and excellent customer <br></br> service.</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <img src="images/MLP2.png" alt="" class="img-fluid mb-3" style="color: not-a-color; height: 125px; width: 125px; border-radius: 50%; object-fit: cover; border: 2px solid black;">
+        <h3 style="padding-top: 10px; font-weight: bold; margin-bottom: 0; color: rgb(153, 4, 3); font-size: 24px !important;">OVER</h3>
+        <h3 style="font-weight: bold; margin-top: 0; color: rgb(153, 4, 3); font-size: 24px !important;">$650</h3>
+        <p style="font-size: 16px; line-height: 12px; color: black;">in average annual savings <br></br> for new customers who <br></br> switch to AIS.</p>
+      </div>
+      <div class="col-md-4 mb-4">
+        <img src="images/MLP3.png" alt="" class="img-fluid mb-3" style="color: not-a-color; height: 125px; width: 125px; border-radius: 50%; object-fit: cover; border: 2px solid black;">
+        <h3 style="padding-top: 10px; font-weight: bold; margin-bottom: 0; color: rgb(153, 4, 3); font-size: 24px !important;">MORE THAN</h3>
+        <h3 style="font-weight: bold; margin-top: 0; color: rgb(153, 4, 3); font-size: 24px !important;">350,000</h3>
+        <p style="font-size: 16px; line-height: 12px; color: black;">5 star reviews and happy <br></br> customers across all <br></br> 50 states.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-------------------------------------------------------------------------------------------------------------------------------------->
+
+<!-- Carousel -->
+<section class="testimonial-carousel" style="background-color:#fff; padding: 40px 0;">
+  <div style="border: 1px solid #333; max-width: 975px; height: 250px; margin: 0 auto; padding: 0; background-color: white;">
+
+  <!-- Blue Top Bar -->
+  <div style="background-color: #0055a5; height: 10px; width: 100%;"></div>
+
+  <!-- Heading -->
+  <div style="text-align: center; font-weight: bold; font-size: 20px; padding: 20px 15px 10px; color: black;">
+    See what our satisfied customers have to say
+  </div>
+
+  <!-- Carousel -->
+  <div id="testimonial-carousel" class="carousel slide" data-ride="carousel" style="margin-bottom: 0;">
+
+    <!-- Indicators -->
+    <ol class="carousel-indicators mercury-indicators" style="bottom: -10px;">
+      <li data-target="#testimonial-carousel" data-slide-to="0" class="active" style="border: 1px solid black;"></li>
+      <li data-target="#testimonial-carousel" data-slide-to="1" style="border: 1px solid black;"></li>
+      <li data-target="#testimonial-carousel" data-slide-to="2" style="border: 1px solid black;"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" style="padding: 0 30px 20px;">
+
+      <div class="item active">
+        <div style="color: #000; text-align: center;">
+          <p style="font-size: 20px; margin-bottom: 10px;">
+            "We have been with Mercury with both car and homeowner insurance. Always very helpful with any questions or any changes necessary. Even when we have                   had claims they are always very helpful. Would not change for any other company"
+          </p>
+          <p style="font-weight: bold; font-size: 20px;">Martha A, Whittier</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div style="color: #000; text-align: center;">
+          <p style="font-size: 20px; margin-bottom: 10px;">
+            "The thing I like most about it, is mercury saved me 514 dollars over a one year period!!"
+          </p>
+          <p style="font-weight: bold; font-size: 20px;">John, Jacksonville</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div style="color: #000; text-align: center;">
+          <p style="font-size: 20px; margin-bottom: 10px;">
+            "I was with Progressive for over 14 years and they kept rising my rates switched to Mercury and saved almost $100 a month."
+          </p>
+          <p style="font-weight: bold; font-size: 20px;">Scott, Fontana</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</section>
+
+<!-------------------------------------------------------------------------------------------------------------------------------------->
+
+<!-- Start Quote with Image -->
+<section style="background-color: #fff; padding: 40px 0;">
+  <div class="container" style="padding-top: 100px; padding-bottom: 100px;">
+    <div class="row" style="display: flex; align-items: center;">
+
+      <!-- Circle Image Left -->
+      <div class="col-sm-4" style="text-align: center; margin-bottom: 20px;">
+        <img src="images/MLP4.png" alt="" style="color: not-a-color; width: 300px; height: 300px; object-fit: cover; border-radius: 50%; float: left;">
+      </div>
+
+      <!-- Content Right -->
+      <div class="col-sm-8">
+        <h2 style="font-size: 44px; font-weight: bold; color: rgb(153, 4, 3);">Start a car insurance quote and compare low rates in minutes!</h2>
+        <p style="color: black;; font-size: 18px; margin-bottom: 20px;">
+          We know you want to find car insurance that is both reliable and affordable. 
+          That's why AIS Insurance has partnered with Mercury Insurance to compare 
+          rates from reputable carriers, all in one place. What could be better than saving both time and money?
+        </p>
+
+        <!-- Zip Input & Button -->
+        <form class="form-inline" style="display: flex; gap: 10px; flex-wrap: wrap;">
+          <input type="text" class="form-control" placeholder="ZIP Code" style="max-width: 150px; border: 1px solid #ccc;">
+          <button type="submit" class="btn btn-primary" style="background-color: #024079; border: none; padding: 6px 20px; width: 200px;">
+            Start My Quote
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-------------------------------------------------------------------------------------------------------------------------------------->
+
+<!-- Mercury Card Section -->
+<section style="background-color: #dadada; padding: 40px 0;">
+  <div class="container">
+
+    <!-- Row for the 2 cards -->
+    <div class="row" style="display: flex; flex-wrap: wrap; margin-bottom: 40px;">
+<div style="text-align: center; padding-top: 20px; padding-bottom: 50px;">
+    <h2 style="color: black; font-weight: bold;">Auto insurance that's customized to fit your needs</h2>
+    <p>In addition to the car insurance required by your state, there are other coverages to consider to help protect your finances in the event of an accident or unexpected mishap. Most of these add-on coverages are affordable, and well worth the peace of mind.</p>
+</div>
+      <!-- Card 1 -->
+      <div class="col-sm-6" style="display: flex; margin-bottom: 20px;">
+        <div class="card" style="background-color: #fff; border-radius: 4px; padding: 20px; flex: 1;">
+          <h3 style="color: #003366; font-weight: bold; font-size: 24px !important;">LIABILITY</h3>
+          <p style="color: #333;">
+            This type of coverage is required of drivers in nearly all states. It covers property damage and injuries you cause to others if you're in at-fault accident. It does not cover the cost(s) of any damage or injuries to you. 
+          </p>
+          <hr style="margin: 15px 0;">
+          <p style="font-weight: bold; color: #333;">Example:</p>
+          <p style="color: #333;">
+            On your daily commute to work, you look away for one second while trying to lower the air conditioning. You hit the car in front of you and the other driver's neck is hurt from the impact. Plus, their back bumper is damaged. Your <strong>liability insurance</strong> pays for their related medical care and car repairs up to your policy's limits.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-sm-6" style="display: flex; margin-bottom: 20px;">
+        <div class="card" style="background-color: #fff; border-radius: 4px; padding: 20px; flex: 1;">
+          <h3 style="color: #003366; font-weight: bold; font-size: 24px !important;">COMPREHENSIVE</h3>
+          <p style="color: #333;">
+            While not required by state law, comprehensive coverage is recommended for most drivers and is often required by your lender if you are leasing or financing your vehicle. It covers non-collision damage caused to your car.
+          </p>
+          <hr style="margin: 15px 0;">
+          <p style="font-weight: bold; color: #333;">Example:</p>
+          <p style="color: #333;">
+            Your car is stolen or damaged by a non-collision event (fire, hail, falling objects, vandalism, or flood) and your <strong>comprehensive coverage</strong> pays for the repairs. 
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Row for the 2 cards -->
+    <div class="row" style="display: flex; flex-wrap: wrap; margin-bottom: 40px;">
+      <!-- Card 1 -->
+      <div class="col-sm-6" style="display: flex; margin-bottom: 20px;">
+        <div class="card" style="background-color: #fff; border-radius: 4px; padding: 20px; flex: 1;">
+          <h3 style="color: #003366; font-weight: bold; font-size: 24px !important;">COLLISION</h3>
+          <p style="color: #333;">
+            Often purchased with comprehensive coverage, collision protection covers damage to your car in the event of an accident, regardless of who is at fault. This coverage helps pay for repairs or replacement of your vehicle when it's involved in an accident, up to your policy’s limits.
+          </p>
+          <hr style="margin: 15px 0;">
+          <p style="font-weight: bold; color: #333;">Example:</p>
+          <p style="color: #333;">
+            Your front bumper was damaged when you rear-ended the car in front of you on your way to the grocery store. Luckily, your <strong>collision coverage</strong> pays out for your car's repairs.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-sm-6" style="display: flex; margin-bottom: 20px;">
+        <div class="card" style="background-color: #fff; border-radius: 4px; padding: 20px; flex: 1;">
+          <h3 style="color: #003366; font-weight: bold; font-size: 24px !important;">UNINSURED/UNDERINSURED</h3>
+          <p style="color: #333;">
+            What happens if you’re hit by a driver that does not have enough car insurance, or any at all? Uninsured/Underinsured motorist coverage pays for your injuries or damages up to your policy's limits, so that you’re not left high and dry.
+          </p>
+          <hr style="margin: 15px 0;">
+          <p style="font-weight: bold; color: #333;">Example:</p>
+          <p style="color: #333;">
+            You're at a stop sign and a car rear-ends you. The other driver tells you they don’t have auto insurance. Your <strong>uninsured/underinsured motorist coverage</strong> pays for your injured knee and damaged car bumper.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Full-width section underneath -->
+    <div class="row">
+      <div class="col-sm-12" style="background-color: #fff;">
+        <div style="border-radius: 4px; padding: 20px;">
+          <h3 style="color: #003366; font-weight: bold; font-size: 24px !important;">WHY DO I NEED CAR INSURANCE?</h3>
+          <p style="color: #333;">
+            Liability insurance is required in nearly every state and is there to protect you financially if you get into a car accident. If that's not reason enough, the additional coverages mentioned above can further cover your injuries and the costs to repair or replace your own vehicle if it gets damaged. Having reliable auto insurance coverage ensures you won’t be stuck paying someone else's medical bills or to repair their car out of your own pocket.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-------------------------------------------------------------------------------------------------------------------------------------->
+
+<!-- Mercury Home Quote -->
+<section style="padding: 60px 0; background-color: #fff;">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Left Column -->
+      <div class="col-md-6" style="margin-top: 10%;">
+        <h1 class="hero-headline" style="font-weight: bold; font-size: 44px;">Home insurance doesn't have to be complicated</h1>
+        <p class="hero-body" style="font-size: 14px;">Your home deserves quality protection. We offer personalized coverage options that are catered to your specific needs.
+            Get a free quote from Mercury Insurance and other top-rated carriers and compare rates today.
+        </p>
+        
+        <div class="hero-form">
+          <input type="text" placeholder="Zip Code" />
+          <button>START MY QUOTE</button>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="col-md-6 text-center">
+        <img src="images/MLP5.png" alt="" style="max-width: 100%; height: auto;" />
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-------------------------------------------------------------------------------------------------------------------------------------->
+
+<!-- Mercury Card Section 2 -->
+<section style="background-color: #fff; padding: 40px 0;">
+  <div class="container">
+    
+    <!-- Row for the 2 cards -->
+    <div class="row" style="display: flex; flex-wrap: wrap; margin-bottom: 40px;">
+      <!-- Card 1 -->
+      <div class="col-sm-6" style="display: flex; margin-bottom: 20px;">
+        <div class="card" style="background-color: #dadada; border-radius: 4px; padding: 20px; flex: 1;">
+          <h3 style="color: #003366; font-weight: bold; font-size: 24px !important;">HOME INSURANCE DISCOUNTS</h3>
+          <p style="color: #333;">
+            We know how important it is for your homeowners insurance policy to provide reliable coverage when you need it most. That doesn’t mean you have to pay a premium for insurance. There are a few ways you can save money on your homeowners insurance.
+          </p>
+<ul>
+<li>Protective Devices Discount (smoke alarms, deadbolts, burglar alarms etc.)</li>
+<li>Fire-Resistant Construction Materials</li>
+<li>Newer Home</li>
+<li>Multi-Policy</li>
+<li>Gated Community</li>
+</ul>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-sm-6" style="display: flex; margin-bottom: 20px;">
+        <div class="card" style="background-color: #dadada; border-radius: 4px; padding: 20px; flex: 1;">
+          <h3 style="color: #003366; font-weight: bold; font-size: 24px !important;">CAR INSURANCE DISCOUNTS</h3>
+          <p style="color: #333;">
+            With AIS and Mercury Insurance, you’re guaranteed to find trustworthy coverage at a great rate. Looking for even more savings? Here are some common car insurance discounts that are easy to qualify for.
+          </p>
+          <ul>
+<li>Good Driver</li>
+<li>Good Student</li>
+<li>Multi-Policy</li>
+<li>Affiliation with Professional Organizations</li>
+<li>AutoPay</li>
+</ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Full-width section underneath -->
+    <div class="row">
+      <div class="col-sm-12" style="background-color: #dadada;">
+        <div style="border-radius: 4px; padding: 20px;">
+          <h3 style="color: #003366; font-weight: bold; font-size: 24px !important;">BUNDLE & SAVE</h3>
+          <p style="color: #333;">
+            When you bundle your home and car insurance with Mercury, you qualify for a multi-policy discount. This puts money back in your wallet while also making it easier to manage both policies with one company. You can make payments, manage and track claims, and update your policy all in one place. 
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-------------------------------------------------------------------------------------------------------------------------------------->
+
+<!-- Mercury Get a Quote -->
+<section style="margin-top: 50px; margin-bottom: 50px;">
+<div class="container component-container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="main-title" style="color: rgb(153, 4, 3);">Getting a free quote is easy peasy</h1>
+            </div>
+        </div>
+        
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="step-list">
+                    <div class="step-item" style="padding-right: 5px;">
+                        <div class="step-number" style="color: rgb(153, 4, 3);">1</div>
+                        <div class="step-text">Enter your information</div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number" style="color: rgb(153, 4, 3);">2</div>
+                        <div class="step-text">Choose your coverage</div>
+                    </div>
+                    <div class="step-item" style="padding-right: 48px;">
+                        <div class="step-number" style="color: rgb(153, 4, 3);">3</div>
+                        <div class="step-text">Get insured today!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="form-row">
+                    <div class="dropdown">
+                        <select class="form-select" aria-label="Auto dropdown" style="height: 45px !important; width: 100px;">
+                            <option selected>Auto</option>
+                            <option value="1">Home</option>
+                            <option value="2">Life</option>
+                        </select>
+                    </div>
+                    <div class="zip-code-input">
+                        <input type="text" class="form-control" placeholder="Zip Code" style="height: 45px;">
+                    </div>
+                    <div class="start-button">
+                        <button type="button" class="btn btn-primary" style="height: 45px;">START MY QUOTE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-------------------------------------------------------------------------------------------------------------------------------------->
+
+<!-- Why Choose Mercury -->
+<div class="why-choose-section">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <!-- Left Column -->
+            <div class="col-md-6" style="margin-top: 10%; padding-right: 130px;">
+                <div class="section-title" style="font-size: 40px;">Why choose Mercury Insurance?</div>
+                <div class="section-text" style="font-size: 14px;">We know that when customers shop around for insurance, one of the biggest factors that they look at is price.
+                    Customers want the lowest price possible, but don't want to compromise when it comes to the safety of their family. There is truly no
+                    need to sacrifice one for the other when you choose the right insurance carrier. With Mercury, you can have both: protection for your family
+                    and a lower premium.
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="col-md-6">
+
+                <!-- Feature 1 -->
+                <div class="feature-box">
+                    <div class="feature-content">
+                        <div class="feature-icon">
+                            <div class="col-md-4">
+                            <img src="images/MLPIcon1.png" alt="" style="margin-bottom: 60px; height: 100px;">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                        <div class="feature-title">Streamlined Customer Hub</div>
+                        <div class="feature-description">
+                            Insurance doesn’t have to be complicated or confusing. In fact, we’re here to make things simpler. 
+                            With our user-friendly customer portal, view or change your policy, download ID cards to your smartphone, and more.
+                        </div>
+                        </div>
+                    </div>
+                    <div class="feature-content">
+                        <div class="feature-icon">
+                            <div class="col-md-4">
+                            <img src="images/MLPIcon2.png" alt="" style="margin-bottom: 60px;">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                        <div class="feature-title" style="margin-top: 20px;">Streamlined Customer Hub</div>
+                        <div class="feature-description">
+                            Insurance doesn’t have to be complicated or confusing. In fact, we’re here to make things simpler. 
+                            With our user-friendly customer portal, view or change your policy, download ID cards to your smartphone, and more.
+                        </div>
+                        </div>
+                    </div>
+                    <div class="feature-content">
+                        <div class="feature-icon">
+                            <div class="col-md-4">
+                            <img src="images/MLPIcon3.png" alt="" style="margin-bottom: 60px;">
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                        <div class="feature-title" style="margin-top: 20px;">Streamlined Customer Hub</div>
+                        <div class="feature-description">
+                            Insurance doesn’t have to be complicated or confusing. In fact, we’re here to make things simpler. 
+                            With our user-friendly customer portal, view or change your policy, download ID cards to your smartphone, and more.
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- End Right Column -->
+
+        </div>
+    </div>
+</div>
+
+<!-------------------------------------------------------------------------------------------------------------------------------------->
+
+<!-- Get a quote -->
+
+<div class="quote-section">
+    <div class="container">
+        <div class="quote-box">
+            <!-- Left: Circle Image -->
+            <div class="quote-image">
+                <img src="images/MLP 8.png" alt="Happy Customers">
+            </div>
+
+            <!-- Right: Content -->
+            <div class="quote-content">
+                <h3 style="font-size: 30px; font-weight: bold;">Average annual savings of over $650</h3>
+                <p style="font-size: 14px;">
+                    Get your free online quote or give us a call at 
+                    <strong>(855) 247-5847</strong> to start saving today.
+                </p>
+
+                <!-- Quote Form -->
+                <form class="quote-form">
+                    <select>
+                        <option>Auto</option>
+                        <option>Home</option>
+                        <option>Renters</option>
+                        <option>Condo</option>
+                    </select>
+                    <input type="text" placeholder="Zip Code">
+                    <button type="submit">START MY QUOTE</button>
+                </form>
+            </div>
+        </div>
+        <p style="font-size: 10px !important; margin-top: 150px; text-align: center;">&copy; 2025 Mercury Insurance Group and Auto Insurance Specialists LLC <a href="" style="color:#000; text-decoration: underline; margin-left: 10px;">Mercury Insurance Privacy Statement</a> <a href="" style="color:#000; text-decoration: underline; margin-left: 10px;">Mercury Insurance Terms of Use</a> <a href="" style="color:#000; text-decoration: underline; margin-left: 10px;">AISinsurance.com</a></p>
+        <p style="font-size: 10px !important; text-align: center;">In CA, AIS is Auto Insurance Specialists LLC | CA Insurance Lic 0524784; Outside of CA, AIS is PoliSeek AIS Insurance Solutions, Inc. | CA Insurance Lic 0F51713 DBA AIS Auto Insurance Specialists Agency. All rights reserved.</p>
+    </div>
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>
