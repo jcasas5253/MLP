@@ -20,6 +20,12 @@ h1, h2, h3 {
     font-size: 40px !important;
 }
 
+hr {
+  border: none;
+  background-color: #000;
+  height: 1px;
+}
+
 .carousel-indicators .active {
     background-color:#000 !important;
 }
@@ -366,7 +372,7 @@ h1, h2, h3 {
     .quote-form select,
     .quote-form input {
         padding: 10px;
-        font-size: 1rem;
+        font-size: inherit;
         border: 1px solid #ccc;
         border-radius: 6px;
         flex: 1;
@@ -446,13 +452,12 @@ h1, h2, h3 {
 
                 <!-- Form -->
                 <form class="form-inline">
-                    <select class="form-control" style="margin-right: 10px; margin-bottom: 10px;">
+                    <select class="form-control" style="margin-right: 10px; margin-bottom: 10px; height: 45px; width: 100px; border: 1px solid;">
                         <option>Auto</option>
                         <option>Home</option>
-                        <option>Other</option>
                     </select>
-                    <input type="text" class="form-control" placeholder="Zip Code" style="margin-right: 10px; margin-bottom: 10px;">
-                    <button type="submit" class="btn btn-primary" style="margin-bottom: 10px;">START MY QUOTE</button>
+                    <input type="text" class="form-control" placeholder="Zip Code" style="margin-right: 10px; margin-bottom: 10px; height: 45px; border: 1px solid;">
+                    <button type="submit" class="btn btn-primary" style="margin-bottom: 10px; height: 45px; background-color: #024079;">START MY QUOTE</button>
                 </form>
             </div>
 
@@ -574,8 +579,8 @@ h1, h2, h3 {
 
         <!-- Zip Input & Button -->
         <form class="form-inline" style="display: flex; gap: 10px; flex-wrap: wrap;">
-          <input type="text" class="form-control" placeholder="ZIP Code" style="max-width: 150px; border: 1px solid #ccc;">
-          <button type="submit" class="btn btn-primary" style="background-color: #024079; border: none; padding: 6px 20px; width: 200px;">
+          <input type="text" class="form-control" placeholder="ZIP Code" style="max-width: 150px; border: 1px solid #ccc; height: 45px; border: 1px solid;">
+          <button type="submit" class="btn btn-primary" style="background-color: #024079; border: none; padding: 6px 20px; width: 200px; height: 45px;">
             Start My Quote
           </button>
         </form>
@@ -600,6 +605,7 @@ h1, h2, h3 {
       <!-- Card 1 -->
       <div class="col-sm-6" style="display: flex; margin-bottom: 20px;">
         <div class="card" style="background-color: #fff; border-radius: 4px; padding: 20px; flex: 1;">
+          <img src="images/MLPIcon4.png" style="height: 45px;">
           <h3 style="color: #003366; font-weight: bold; font-size: 24px !important;">LIABILITY</h3>
           <p style="color: #333;">
             This type of coverage is required of drivers in nearly all states. It covers property damage and injuries you cause to others if you're in at-fault accident. It does not cover the cost(s) of any damage or injuries to you. 
@@ -615,6 +621,7 @@ h1, h2, h3 {
       <!-- Card 2 -->
       <div class="col-sm-6" style="display: flex; margin-bottom: 20px;">
         <div class="card" style="background-color: #fff; border-radius: 4px; padding: 20px; flex: 1;">
+          <img src="images/MLPIcon4.png" style="height: 45px;">
           <h3 style="color: #003366; font-weight: bold; font-size: 24px !important;">COMPREHENSIVE</h3>
           <p style="color: #333;">
             While not required by state law, comprehensive coverage is recommended for most drivers and is often required by your lender if you are leasing or financing your vehicle. It covers non-collision damage caused to your car.
@@ -633,6 +640,7 @@ h1, h2, h3 {
       <!-- Card 1 -->
       <div class="col-sm-6" style="display: flex; margin-bottom: 20px;">
         <div class="card" style="background-color: #fff; border-radius: 4px; padding: 20px; flex: 1;">
+          <img src="images/MLPIcon4.png" style="height: 45px;">
           <h3 style="color: #003366; font-weight: bold; font-size: 24px !important;">COLLISION</h3>
           <p style="color: #333;">
             Often purchased with comprehensive coverage, collision protection covers damage to your car in the event of an accident, regardless of who is at fault. This coverage helps pay for repairs or replacement of your vehicle when it's involved in an accident, up to your policy’s limits.
@@ -648,6 +656,7 @@ h1, h2, h3 {
       <!-- Card 2 -->
       <div class="col-sm-6" style="display: flex; margin-bottom: 20px;">
         <div class="card" style="background-color: #fff; border-radius: 4px; padding: 20px; flex: 1;">
+          <img src="images/MLPIcon4.png" style="height: 45px;">
           <h3 style="color: #003366; font-weight: bold; font-size: 24px !important;">UNINSURED/UNDERINSURED</h3>
           <p style="color: #333;">
             What happens if you’re hit by a driver that does not have enough car insurance, or any at all? Uninsured/Underinsured motorist coverage pays for your injuries or damages up to your policy's limits, so that you’re not left high and dry.
@@ -690,10 +699,12 @@ h1, h2, h3 {
             Get a free quote from Mercury Insurance and other top-rated carriers and compare rates today.
         </p>
         
-        <div class="hero-form">
-          <input type="text" placeholder="Zip Code" />
-          <button>START MY QUOTE</button>
-        </div>
+        <form class="form-inline" style="display: flex; gap: 10px; flex-wrap: wrap;">
+          <input type="text" class="form-control" placeholder="ZIP Code" style="max-width: 150px; border: 1px solid #ccc; height: 45px; border: 1px solid;">
+          <button type="submit" class="btn btn-primary" style="background-color: #024079; border: none; padding: 6px 20px; width: 200px; height: 45px;">
+            Start My Quote
+          </button>
+        </form>
       </div>
 
       <!-- Right Column -->
@@ -797,17 +808,16 @@ h1, h2, h3 {
             <div class="col-12">
                 <div class="form-row">
                     <div class="dropdown">
-                        <select class="form-select" aria-label="Auto dropdown" style="height: 45px !important; width: 100px;">
+                        <select class="form-select" aria-label="Auto dropdown" style="height: 45px !important; width: 100px; border: 1px solid;">
                             <option selected>Auto</option>
                             <option value="1">Home</option>
-                            <option value="2">Life</option>
                         </select>
                     </div>
                     <div class="zip-code-input">
-                        <input type="text" class="form-control" placeholder="Zip Code" style="height: 45px;">
+                        <input type="text" class="form-control" placeholder="Zip Code" style="height: 45px; border: 1px solid;">
                     </div>
                     <div class="start-button">
-                        <button type="button" class="btn btn-primary" style="height: 45px;">START MY QUOTE</button>
+                        <button type="button" class="btn btn-primary" style="height: 45px; background-color: #024079;">START MY QUOTE</button>
                     </div>
                 </div>
             </div>
@@ -909,14 +919,12 @@ h1, h2, h3 {
 
                 <!-- Quote Form -->
                 <form class="quote-form">
-                    <select>
+                    <select style="height: 45px; border: 1px solid;">
                         <option>Auto</option>
                         <option>Home</option>
-                        <option>Renters</option>
-                        <option>Condo</option>
                     </select>
-                    <input type="text" placeholder="Zip Code">
-                    <button type="submit">START MY QUOTE</button>
+                    <input type="text" placeholder="Zip Code" style="height: 45px; border: 1px solid;">
+                    <button type="submit" style="height: 45px; background-color: #024079;">START MY QUOTE</button>
                 </form>
             </div>
         </div>
