@@ -195,6 +195,7 @@ input::placeholder {
     font-weight: bold;
     margin-right: 15px;
     flex-shrink: 0;
+    font-size: 20px;
 }
 
 .step-text {
@@ -323,8 +324,8 @@ input::placeholder {
 }
 
 .quote-section {
-    padding: 50px 0;
-    padding-top: 100px;
+    padding: 10px 0;
+    padding-top: 200px;
     background-color: #fff;
 }
 
@@ -336,6 +337,7 @@ input::placeholder {
     max-width: 900px;
     margin: 0 auto;
     background: #fff;
+    margin-bottom: 400px;
 }
 
 .quote-box .quote-image {
@@ -344,8 +346,8 @@ input::placeholder {
 }
 
 .quote-box .quote-image img {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -648,7 +650,7 @@ input::placeholder {
    
 <!-- Header -->
 <div class="insurance-hero" style="position: relative; min-height: 100vh; overflow: hidden;">
-    <div style="position: relative; z-index: 2; max-width: 50%; padding: 60px 40px; display: flex; flex-direction: column; justify-content: center;">
+    <div style="position: relative; z-index: 2; max-width: 60%; padding: 60px 40px; display: flex; flex-direction: column; justify-content: center;">
         <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; margin-bottom: 40px; gap: 20px;">
             <div class="logo">
                 <img src="images/MLPLogo.png" alt="Mercury Insurance Logo" style="max-height: 50px; height: auto;">
@@ -674,13 +676,13 @@ input::placeholder {
             </div>
         </div>
 
-        <h2 style="font-size: clamp(28px, 4vw, 48px); margin-bottom: 20px; line-height: 1.2; color: rgb(153, 4, 3); font-weight: bold;">Mercury Insurance, over 50 years of saving you money</h2>
-        <p style="font-size: clamp(14px, 1.5vw, 16px); line-height: 1.6; margin-bottom: 40px; color: #333;">When you're able to save money and maintain quality coverage, everybody comes out a winner. Whether you're looking for auto insurance or just about any other insurance, there is something to fit your budget with Mercury.</p>
+        <h2 style="padding-left: 50px; font-size: clamp(28px, 4vw, 48px); margin-bottom: 20px; line-height: 1.2; color: rgb(153, 4, 3); font-weight: bold;">Mercury Insurance, over 50 years of saving you money</h2>
+        <p style="padding-left: 50px; font-size: clamp(14px, 1.5vw, 16px); line-height: 1.6; margin-bottom: 40px; color: #333;">When you're able to save money and maintain quality coverage, everybody comes out a winner. Whether you're looking for auto insurance or just about any other insurance, there is something to fit your budget with Mercury.</p>
 
-        <div class="cta" style="font-size: clamp(20px, 2.5vw, 28px); font-weight: bold; margin-bottom: 10px; color: rgb(153, 4, 3);">Get a free online quote</div>
-        <p style="font-size: clamp(13px, 1.5vw, 15px); margin-bottom: 20px; color: #333;">It only takes a few minutes. Results are sent straight to your inbox.</p>
+        <div class="cta" style="font-size: clamp(20px, 2.5vw, 28px); font-weight: bold; margin-bottom: 10px; color: rgb(153, 4, 3); padding-left: 50px;">Get a free online quote</div>
+        <p style="font-size: clamp(13px, 1.5vw, 15px); margin-bottom: 20px; color: #333; padding-left: 50px;">It only takes a few minutes. Results are sent straight to your inbox.</p>
 
-        <form style="display: flex; gap: 10px; flex-wrap: wrap;">
+        <form style="display: flex; gap: 10px; flex-wrap: wrap; padding-left: 50px;">
             <select class="form-control" style="height: 50px; width: 120px; min-width: 100px; border: 1px solid #ccc; border-radius: 4px; padding: 0 10px; font-size: 16px;">
                 <option>Auto</option>
                 <option>Home</option>
@@ -690,8 +692,8 @@ input::placeholder {
         </form>
     </div>
 
-    <div style="position: absolute; right: 0; top: 0; width: 50%; height: 100vh; z-index: 1;">
-        <img src="images/MLP7.png" alt="Happy family in car" class="hero-image" style="width: 100%; height: 100%; object-fit: cover; object-position: left center; display: block;">
+    <div style="position: absolute; right: 0; top: 0; width: 40%; height: 100vh; z-index: 1;">
+        <img src="images/MLP7.png" alt="Happy family in car" class="hero-image" style="width: 100%; height: 100%; object-fit: cover; object-position: center; display: block;">
     </div>
 </div>
 
@@ -767,8 +769,8 @@ input::placeholder {
 </section>
 
 <!-- Start Quote with Image -->
-<section id="autoScroll" style="background-color: #fff; padding: 40px 0;">
-  <div style="margin: 0 auto; padding: 100px 20px; padding-right: 5%;">
+<section id="autoScroll" style="background-color: #fff; padding: 40px 0; height: 100vh;">
+  <div style="margin: 0 auto; padding: 250px 20px; width: 60%;">
     <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 20px;">
       <div style="flex: 1; min-width: 280px; text-align: center; margin-bottom: 20px;">
         <img src="images/MLP4.png" alt="" style="width: 100%; max-width: 300px; height: auto; aspect-ratio: 1/1; object-fit: cover; border-radius: 50%;">
@@ -784,7 +786,7 @@ input::placeholder {
         </p>
         <form style="display: flex; gap: 10px; flex-wrap: wrap;">
           <input type="text" placeholder="ZIP Code" style="flex: 0 1 150px; min-width: 120px; height: 45px; padding: 0 15px; border: 1px solid black; border-radius: 4px; font-size: 16px;">
-          <button type="submit" style="flex: 0 1 200px; min-width: 160px; height: 45px; background-color: #024079; color: white; border: none; border-radius: 4px; font-size: 16px; cursor: pointer; font-weight: 500;">
+          <button type="submit" style="flex: 0 1 200px; min-width: 160px; height: 45px; background-color: #024079; color: white; border: none; border-radius: 4px; font-size: 16px; cursor: pointer; font-weight: bold;">
             Start My Quote
           </button>
         </form>
@@ -808,7 +810,7 @@ input::placeholder {
     <!-- Card Row 1 -->
     <div class="row">
       <div class="col-md-6 col-12 mb-4 d-md-flex">
-        <div class="card flex-fill h-100 d-flex flex-column" style="background-color: #fff; border-radius: 4px; padding: 20px; margin-bottom: 40px;">
+        <div class="card flex-fill h-100 d-flex flex-column" style="background-color: #fff; border-radius: 4px; padding: 20px; margin-bottom: 40px; min-height: 400px;">
           <img src="images/MLPIcon4.png" style="height: 45px; width: 50px;">
           <h3 style="color: #003366; font-weight: bold; font-size: 20px !important;">LIABILITY</h3>
           <p style="color: #333;">
@@ -826,7 +828,7 @@ input::placeholder {
       </div>
 
       <div class="col-md-6 col-12 mb-4 d-md-flex">
-        <div class="card flex-fill h-100 d-flex flex-column" style="background-color: #fff; border-radius: 4px; padding: 20px; min-height: 398px; margin-bottom: 40px;">
+        <div class="card flex-fill h-100 d-flex flex-column" style="background-color: #fff; border-radius: 4px; padding: 20px; min-height: 398px; margin-bottom: 40px; min-height: 400px;">
           <img src="images/MLPIcon4.png" style="height: 45px; width: 50px;">
           <h3 style="color: #003366; font-weight: bold; font-size: 20px !important;">COMPREHENSIVE</h3>
           <p style="color: #333;">
@@ -847,7 +849,7 @@ input::placeholder {
     <!-- Card Row 2 -->
     <div class="row">
       <div class="col-md-6 col-12 mb-4 d-md-flex">
-        <div class="card flex-fill h-100 d-flex flex-column" style="background-color: #fff; border-radius: 4px; padding: 20px; min-height: 398px; margin-bottom: 40px;">
+        <div class="card flex-fill h-100 d-flex flex-column" style="background-color: #fff; border-radius: 4px; padding: 20px; min-height: 398px; margin-bottom: 40px; min-height: 400px;">
           <img src="images/MLPIcon4.png" style="height: 45px; width: 50px;">
           <h3 style="color: #003366; font-weight: bold; font-size: 20px !important;">COLLISION</h3>
           <p style="color: #333;">
@@ -865,7 +867,7 @@ input::placeholder {
       </div>
 
       <div class="col-md-6 col-12 mb-4 d-md-flex">
-        <div class="card flex-fill h-100 d-flex flex-column" style="background-color: #fff; border-radius: 4px; padding: 20px; margin-bottom: 40px;">
+        <div class="card flex-fill h-100 d-flex flex-column" style="background-color: #fff; border-radius: 4px; padding: 20px; margin-bottom: 40px; min-height: 400px;">
           <img src="images/MLPIcon4.png" style="height: 45px; width: 50px;">
           <h3 style="color: #003366; font-weight: bold; font-size: 20px !important;">UNINSURED/UNDERINSURED</h3>
           <p style="color: #333;">
@@ -886,7 +888,7 @@ input::placeholder {
     <!-- Final Section -->
     <div class="row">
       <div class="col-sm-12">
-        <div class="card" style="background-color: #fff; border-radius: 4px; padding: 20px;">
+        <div class="card" style="background-color: #fff; border-radius: 4px; padding: 20px; margin-bottom: 40px;">
           <h3 style="color: #003366; font-weight: bold; font-size: 20px !important;">WHY DO I NEED CAR INSURANCE?</h3>
           <p style="color: #333;">
             Liability insurance is required in nearly every state and is there to protect you financially if you get into a car accident. If that's not reason enough, the additional coverages mentioned above can further cover your injuries and the costs to repair or replace your own vehicle if it gets damaged. Having reliable auto insurance coverage ensures you won't be stuck paying someone else's medical bills or to repair their car out of your own pocket.
@@ -899,9 +901,9 @@ input::placeholder {
 </section>
 
 <!-- Mercury Home Quote -->
-<section style="padding: 60px 0; background-color: #fff;" id="homeScroll">
-  <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 20px; position: relative;">
-    <div style="flex: 1; min-width: 300px; padding: 40px 0 40px 60px;">
+<section style="padding: 60px 0; background-color: #fff; height: 100vh;" id="homeScroll">
+  <div style="display: flex; flex-wrap: wrap; gap: 20px; position: relative; padding: 250px 0px;">
+    <div style="flex: 1; min-width: 300px; padding: 40px 0 40px 60px; margin-left: 314px;">
       <div style="max-width: 100%;">
         <h1 style="font-weight: bold; font-size: clamp(32px, 5vw, 44px); line-height: 1.2; margin-bottom: 20px; color: rgb(153, 4, 3);">
           Home insurance doesn't have to be complicated
@@ -925,7 +927,7 @@ input::placeholder {
 </section>
 
 <!-- Mercury Card Section 2 -->
-<section style="background-color: #fff; padding: 100px 0;">
+<section style="background-color: #fff; padding: 200px 0;">
   <div class="container">
     <div class="row" style="display: flex; flex-wrap: wrap; align-items: stretch;">
       <div class="col-sm-6 d-flex" style="margin-bottom: 40px;">
@@ -981,7 +983,7 @@ input::placeholder {
 </section>
 
 <!-- Mercury Get a Quote -->
-<section style="margin-top: 50px; margin-bottom: 50px; height: 100vh; display: flex; align-items: center;">
+<section style="margin-top: -150px; margin-bottom: 50px; height: 100vh; display: flex; align-items: center;">
   <div class="container component-container">
     <div class="row">
       <div class="col-12">
@@ -1032,9 +1034,9 @@ input::placeholder {
 <div class="why-choose-section" id="aboutScroll" style="height: 100vh; display: flex; align-items: center;">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-md-6" style="padding-right: 130px; padding-top: 130px;">
+      <div class="col-md-6" style="padding-right: 130px; padding-top: 100px;">
         <div class="section-title" style="font-size: 40px;">Why choose Mercury Insurance?</div>
-        <div class="section-text" style="font-size: 14px;">We know that when customers shop around for insurance, one of the biggest factors that they look at is price.
+        <div class="section-text" style="font-size: 16px;">We know that when customers shop around for insurance, one of the biggest factors that they look at is price.
           Customers want the lowest price possible, but don't want to compromise when it comes to the safety of their family. There is truly no
           need to sacrifice one for the other when you choose the right insurance carrier. With Mercury, you can have both: protection for your family
           and a lower premium.
