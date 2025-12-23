@@ -1,651 +1,660 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mercury Insurance</title>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
     <style>
-body {
-  overflow-x: hidden;
-}
-
-p {
-    font-size: 16px !important;
-}
-
-li {
-    font-size: 16px !important;
-}
-
-h1, h2, h3 {
-    font-size: 40px !important;
-}
-
-hr {
-  border: none;
-  background-color: #000;
-  height: 1px;
-}
-
-.carousel-indicators .active {
-    background-color:#000 !important;
-}
-
-.insurance-hero {
-    padding: 40px 0;
-    padding-top: 0;
-}
-
-.insurance-hero .logo img {
-    max-height: 60px;
-}
-
-.insurance-hero .contact {
-    font-size: 1rem;
-    font-weight: 600;
-    color: #000;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-}
-
-.insurance-hero .contact strong {
-    font-size: 1.25rem;
-    color: #0055a5;
-}
-
-.insurance-hero h2 {
-    font-size: 44px;
-    font-weight: bold;
-    color: #b21e1e;
-    margin-bottom: 15px;
-    padding-right: 100px;
-}
-
-.insurance-hero p {
-    font-size: 14px;
-    color: #333;
-    margin-bottom: 20px;
-    padding-right: 100px;
-}
-
-.insurance-hero .cta {
-    font-weight: bold;
-    color: #b21e1e;
-    font-size: 44px;
-    margin-bottom: 10px;
-}
-
-.insurance-hero .form-inline .form-control {
-    margin-right: 10px;
-}
-
-.insurance-hero .btn-primary {
-    background-color: #002f6c;
-    border-color: #002f6c;
-    font-weight: 600;
-    padding: 10px 20px;
-}
-
-.icon-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.icon-img {
-    max-width: 80px;
-    height: auto;
-    margin-bottom: 8px;
-    cursor: pointer;
-}
-
-.icon-text {
-    font-size: 1.1rem;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
-.hero-headline {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #a10000;
-  margin-bottom: 20px;
-}
-
-.hero-body {
-  font-size: 1rem;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-.hero-form {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.hero-form input {
-  padding: 10px 15px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 1rem;
-}
-
-input::placeholder {
-  color: #024079 !important;
-  opacity: 1 !important;
-}
-
-.hero-form button {
-  padding: 10px 20px;
-  font-size: 1rem;
-  font-weight: bold;
-  background-color: #003366;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-.hero-form button:hover {
-  background-color: #002244;
-}
-
-.component-container {
-    font-family: Arial, sans-serif;
-    padding: 50px 20px;
-    background-color: #ffffff;
-    text-align: center;
-}
-
-.main-title {
-    color: #d82b3a;
-    font-weight: bold;
-    font-size: 44px;
-    margin-bottom: 3rem;
-}
-
-.step-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.step-item {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-bottom: 1.5rem;
-}
-
-.step-number {
-    width: 50px;
-    height: 50px;
-    border: 2px solid rgb(153, 4, 3);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #d82b3a;
-    font-weight: bold;
-    margin-right: 15px;
-    flex-shrink: 0;
-    font-size: 20px;
-}
-
-.step-text {
-    font-size: 25px;
-    color: #333;
-    text-align: left;
-}
-
-.form-row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    margin-top: 3rem;
-    flex-wrap: wrap;
-}
-
-.form-select, .form-control {
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    color: #024079;
-}
-
-.btn-primary {
-    background-color: #1a4f78;
-    border-color: #1a4f78;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-
-.why-choose-section {
-    position: relative;
-    padding: 60px 0;
-    background: url('images/MLP6.png') no-repeat center center;
-    background-position: top;
-    background-size: cover;
-    color: #333;
-    z-index: 1;
-}
-
-.why-choose-section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.8);
-    z-index: -1;
-}
-
-.why-choose-section .section-title {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #000;
-}
-
-.why-choose-section .section-text {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #000;
-}
-
-.section-title {
-    font-weight: bold !important;
-}
-
-.feature-box {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
-    margin-bottom: 20px;
-    position: relative;
-    padding-top: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    border-left: 2px solid;
-    border-right: 2px solid;
-    border-bottom: 2px solid;
-}
-
-.feature-box::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 10px;
-    width: 100%;
-    background: #0055a5;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.feature-content {
-    display: flex;
-    align-items: center;
-    text-align: left;
-    gap: 15px;
-    flex-wrap: wrap;
-}
-
-.feature-icon {
-    margin-bottom: 0;
-}
-
-.feature-icon img {
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
-}
-
-.feature-title {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 8px;
-}
-
-.feature-description {
-    width: 100%;
-    font-size: 14px;
-    line-height: 1.5;
-    margin-top: 5px;
-}
-
-.quote-section {
-    padding: 10px 0;
-    padding-top: 200px;
-    background-color: #fff;
-}
-
-.quote-box {
-    display: flex;
-    align-items: center;
-    border-radius: 4px;
-    padding: 20px;
-    max-width: 900px;
-    margin: 0 auto;
-    background: #fff;
-    margin-bottom: 400px;
-}
-
-.quote-box .quote-image {
-    flex: 0 0 200px;
-    margin-right: 20px;
-}
-
-.quote-box .quote-image img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.quote-box .quote-content {
-    flex: 1;
-}
-
-.quote-box h3 {
-    font-weight: 700;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.quote-box p {
-    font-size: 1rem;
-    margin-bottom: 20px;
-}
-
-.quote-form {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.quote-form select,
-.quote-form input {
-    padding: 10px;
-    font-size: inherit;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    flex: 1;
-    min-width: 120px;
-}
-
-.quote-form button {
-    background-color: #003366;
-    color: #fff;
-    font-weight: bold;
-    border: none;
-    border-radius: 6px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.quote-form button:hover {
-    background-color: #002244;
-}
-
-/* MOBILE RESPONSIVE STYLES */
-@media (max-width: 1345px) {
-  .icon-row {
-    gap: 135px !important;
-  }
-}
-
-@media (max-width: 992px) {
-    .insurance-hero > div:first-child {
-        max-width: 100% !important;
-        padding: 40px 20px !important;
-    }
-    .insurance-hero > div:last-child {
-        position: relative !important;
-        width: 100% !important;
-        height: 50vh !important;
-        order: -1;
-    }
-    .insurance-hero {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    /* Why Choose Section */
-    .why-choose-section {
-        height: auto !important;
-        min-height: auto !important;
-    }
-    
-    .why-choose-section .col-md-6 {
-        padding-right: 15px !important;
-        padding-top: 40px !important;
-    }
-}
-
-@media (max-width: 768px) {
-    h1, h2, h3 {
-        font-size: 28px !important;
-    }
-    
-    .main-title {
-        font-size: 32px !important;
-    }
-    
-    .step-text {
-        font-size: 18px !important;
-    }
-    
-    /* Hero Section */
-    .insurance-hero h2 {
-        padding-right: 0 !important;
-    }
-    
-    .insurance-hero p {
-        padding-right: 0 !important;
-    }
-    
-    /* Icon Row - Stack vertically on mobile */
-    .insurance-hero .icon-row {
-        flex-direction: column !important;
-        gap: 30px !important;
-    }
-    
-    /* Three Column Stats */
-    .three-column-section .row {
-        padding-top: 50px !important;
-    }
-    
-    .three-column-section .col-md-4 {
-        margin-bottom: 40px;
-    }
-    
-    /* Carousel */
-    .testimonial-carousel p {
-        font-size: 16px !important;
-    }
-    
-    /* Auto Section with Circle Image */
-    #autoScroll > div {
-        padding: 40px 20px !important;
-    }
-    
-    #autoScroll > div > div {
-        flex-direction: column;
-    }
-    
-    #autoScroll > div > div > div:first-child {
-        order: 1;
-        margin-bottom: 30px;
-    }
-    
-    #autoScroll > div > div > div:last-child {
-        order: 2;
-    }
-    
-    /* Mercury Cards */
-    .card {
-        margin-bottom: 20px;
-    }
-    
-    .card h3 {
-        font-size: 20px !important;
-    }
-    
-    .card p {
-        font-size: 14px !important;
-    }
-    
-    /* Home Quote Section */
-    #homeScroll > div {
-        flex-direction: column;
-    }
-    
-    #homeScroll > div > div:first-child {
-        padding: 20px !important;
-    }
-    
-    #homeScroll > div > div:last-child {
-        width: 100% !important;
-    }
-    
-    /* Discount Cards */
-    .col-sm-6.d-flex {
-        margin-bottom: 80px !important;
-    }
-    
-    .card > div:first-child {
-        top: -55px !important;
-    }
-    
-    /* Easy Quote Section */
-    .component-container {
-        padding: 30px 15px !important;
-        height: auto !important;
-    }
-    
-    section[style*="height: 100vh"] {
-        height: auto !important;
-        padding: 40px 0 !important;
-    }
-    
-    /* Why Choose Section */
-    .why-choose-section .section-title {
-        font-size: 28px !important;
-    }
-    
-    .why-choose-section .section-text {
-        font-size: 16px !important;
-    }
-    
-    .feature-content {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .feature-content .col-md-4,
-    .feature-content .col-md-8 {
-        width: 100% !important;
-        padding: 0 !important;
-    }
-    
-    .feature-description {
-        margin-top: 10px;
-    }
-    
-    /* Final Quote Section */
-    .quote-box {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .quote-box .quote-image {
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-    
-    .quote-section p[style*="margin-top: 150px"] {
-        margin-top: 50px !important;
-    }
-
-    .step-item3 {
-      padding-right: 33px !important;
-    }
-}
-
-@media (max-width: 992px) {
-  .why-choose-icon {
-    margin-bottom: 0 !important;
-    margin-top: 30px;
-  }
-
-  .why-choose-icon1 {
-    margin-top: 0 !important;
-  }
-}
-
-@media (max-width: 576px) {
-    /* Further adjustments for very small screens */
-    .form-row {
-        flex-direction: column;
-        align-items: stretch;
-    }
-    
-    .form-row .form-control,
-    .form-row select,
-    .form-row button {
-        width: 100% !important;
-        min-width: 100% !important;
-    }
-    
-    .quote-form {
-        flex-direction: column;
-    }
-    
-    .quote-form select,
-    .quote-form input,
-    .quote-form button {
-        width: 100%;
-    }
-    
-    /* Icon gaps */
-    .insurance-hero .icon-row {
-        gap: 20px !important;
-    }
-    
-    .step-number {
-        width: 40px;
-        height: 40px;
-        font-size: 18px;
-    }
-    
-    .step-text {
-        font-size: 16px !important;
-    }
-}
-
-@media (max-width: 510px) {
-  .contact {
-    width: 100%;
-    text-align: center !important;
-  }
-
-  .logo {
-    margin: auto;
-  }
-}
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=League+Spartan:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Heebo:wght@100..900&family=League+Spartan:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+        body {
+            overflow-x: hidden;
+            font-family: "Heebo", sans-serif;
+        }
+
+        p {
+            font-size: 18px !important;
+        }
+
+        li {
+            font-size: 18px !important;
+        }
+
+        h1, h2, h3 {
+            font-family: 'League Spartan', sans-serif !important;
+            font-size: 40px !important;
+        }
+
+        hr {
+            border: none;
+            background-color: #000;
+            height: 1px;
+        }
+
+        .carousel-indicators .active {
+            background-color: #000 !important;
+        }
+
+        .insurance-hero {
+            padding: 40px 0;
+            padding-top: 0;
+        }
+
+            .insurance-hero .logo img {
+                max-height: 60px;
+            }
+
+            .insurance-hero .contact {
+                font-size: 1rem;
+                font-weight: 600;
+                color: #000;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 100%;
+            }
+
+                .insurance-hero .contact strong {
+                    font-size: 1.25rem;
+                    color: #0055a5;
+                }
+
+            .insurance-hero h2 {
+                font-size: 44px;
+                font-weight: bold;
+                color: #b21e1e;
+                margin-bottom: 15px;
+                padding-right: 100px;
+            }
+
+            .insurance-hero p {
+                font-size: 14px;
+                color: #333;
+                margin-bottom: 20px;
+                padding-right: 100px;
+            }
+
+            .insurance-hero .cta {
+                font-weight: bold;
+                color: #b21e1e;
+                font-size: 44px;
+                margin-bottom: 10px;
+            }
+
+            .insurance-hero .form-inline .form-control {
+                margin-right: 10px;
+            }
+
+            .insurance-hero .btn-primary {
+                background-color: #002f6c;
+                border-color: #002f6c;
+                font-weight: 600;
+                padding: 10px 20px;
+            }
+
+        .icon-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .icon-img {
+            max-width: 80px;
+            height: auto;
+            margin-bottom: 8px;
+            cursor: pointer;
+        }
+
+        .icon-text {
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .hero-headline {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #a10000;
+            margin-bottom: 20px;
+        }
+
+        .hero-body {
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .hero-form {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+            .hero-form input {
+                padding: 10px 15px;
+                border: 1px solid #ccc;
+                border-radius: 6px;
+                font-size: 1rem;
+            }
+
+        input::placeholder {
+            color: #024079 !important;
+            opacity: 1 !important;
+        }
+
+        .hero-form button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            background-color: #003366;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+            .hero-form button:hover {
+                background-color: #002244;
+            }
+
+        .component-container {
+            font-family: Arial, sans-serif;
+            padding: 50px 20px;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        .main-title {
+            color: #d82b3a;
+            font-weight: bold;
+            font-size: 44px;
+            margin-bottom: 3rem;
+        }
+
+        .step-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .step-item {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 1.5rem;
+        }
+
+        .step-number {
+            width: 50px;
+            height: 50px;
+            border: 2px solid rgb(153, 4, 3);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #d82b3a;
+            font-weight: bold;
+            margin-right: 15px;
+            flex-shrink: 0;
+            font-size: 20px;
+        }
+
+        .step-text {
+            font-size: 25px;
+            color: #333;
+            text-align: left;
+        }
+
+        .form-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .form-select, .form-control {
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            color: #024079;
+        }
+
+        .btn-primary {
+            background-color: #1a4f78;
+            border-color: #1a4f78;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .why-choose-section {
+            position: relative;
+            padding: 60px 0;
+            background: url('images/MLP6.png') no-repeat center center;
+            background-position: top;
+            background-size: cover;
+            color: #333;
+            z-index: 1;
+        }
+
+            .why-choose-section::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(255, 255, 255, 0.8);
+                z-index: -1;
+            }
+
+            .why-choose-section .section-title {
+                font-size: 2rem;
+                font-weight: bold;
+                margin-bottom: 20px;
+                color: #000;
+            }
+
+            .why-choose-section .section-text {
+                font-size: 1.1rem;
+                line-height: 1.6;
+                color: #000;
+            }
+
+        .section-title {
+            font-weight: bold !important;
+        }
+
+        .feature-box {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            position: relative;
+            padding-top: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            border-left: 2px solid;
+            border-right: 2px solid;
+            border-bottom: 2px solid;
+        }
+
+            .feature-box::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 10px;
+                width: 100%;
+                background: #0055a5;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+
+        .feature-content {
+            display: flex;
+            align-items: center;
+            text-align: left;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .feature-icon {
+            margin-bottom: 0;
+        }
+
+            .feature-icon img {
+                width: 80px;
+                height: 80px;
+                object-fit: contain;
+            }
+
+        .feature-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .feature-description {
+            width: 100%;
+            font-size: 14px;
+            line-height: 1.5;
+            margin-top: 5px;
+        }
+
+        .quote-section {
+            padding: 10px 0;
+            padding-top: 200px;
+            background-color: #fff;
+        }
+
+        .quote-box {
+            display: flex;
+            align-items: center;
+            border-radius: 4px;
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            margin-bottom: 400px;
+        }
+
+            .quote-box .quote-image {
+                flex: 0 0 200px;
+                margin-right: 20px;
+            }
+
+                .quote-box .quote-image img {
+                    width: 300px;
+                    height: 300px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+
+            .quote-box .quote-content {
+                flex: 1;
+            }
+
+            .quote-box h3 {
+                font-weight: 700;
+                font-size: 1.5rem;
+                margin-bottom: 10px;
+            }
+
+            .quote-box p {
+                font-size: 1rem;
+                margin-bottom: 20px;
+            }
+
+        .quote-form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+            .quote-form select,
+            .quote-form input {
+                padding: 10px;
+                font-size: inherit;
+                border: 1px solid #ccc;
+                border-radius: 6px;
+                flex: 1;
+                min-width: 120px;
+            }
+
+            .quote-form button {
+                background-color: #003366;
+                color: #fff;
+                font-weight: bold;
+                border: none;
+                border-radius: 6px;
+                padding: 10px 20px;
+                cursor: pointer;
+                transition: background 0.3s;
+            }
+
+                .quote-form button:hover {
+                    background-color: #002244;
+                }
+
+        /* MOBILE RESPONSIVE STYLES */
+        @media (max-width: 1345px) {
+            .icon-row {
+                gap: 135px !important;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .insurance-hero > div:first-child {
+                max-width: 100% !important;
+                padding: 40px 20px !important;
+            }
+
+            .insurance-hero > div:last-child {
+                position: relative !important;
+                width: 100% !important;
+                height: 50vh !important;
+                order: -1;
+            }
+
+            .insurance-hero {
+                display: flex;
+                flex-direction: column;
+            }
+
+            /* Why Choose Section */
+            .why-choose-section {
+                height: auto !important;
+                min-height: auto !important;
+            }
+
+                .why-choose-section .col-md-6 {
+                    padding-right: 15px !important;
+                    padding-top: 40px !important;
+                }
+        }
+
+        @media (max-width: 768px) {
+            h1, h2, h3 {
+                font-size: 28px !important;
+            }
+
+            .main-title {
+                font-size: 32px !important;
+            }
+
+            .step-text {
+                font-size: 18px !important;
+            }
+
+            /* Hero Section */
+            .insurance-hero h2 {
+                padding-right: 0 !important;
+            }
+
+            .insurance-hero p {
+                padding-right: 0 !important;
+            }
+
+            /* Icon Row - Stack vertically on mobile */
+            .insurance-hero .icon-row {
+                flex-direction: column !important;
+                gap: 30px !important;
+            }
+
+            /* Three Column Stats */
+            .three-column-section .row {
+                padding-top: 50px !important;
+            }
+
+            .three-column-section .col-md-4 {
+                margin-bottom: 40px;
+            }
+
+            /* Carousel */
+            .testimonial-carousel p {
+                font-size: 16px !important;
+            }
+
+            /* Auto Section with Circle Image */
+            #autoScroll > div {
+                padding: 40px 20px !important;
+            }
+
+                #autoScroll > div > div {
+                    flex-direction: column;
+                }
+
+                    #autoScroll > div > div > div:first-child {
+                        order: 1;
+                        margin-bottom: 30px;
+                    }
+
+                    #autoScroll > div > div > div:last-child {
+                        order: 2;
+                    }
+
+            /* Mercury Cards */
+            .card {
+                margin-bottom: 20px;
+            }
+
+                .card h3 {
+                    font-size: 20px !important;
+                }
+
+                .card p {
+                    font-size: 14px !important;
+                }
+
+            /* Home Quote Section */
+            #homeScroll > div {
+                flex-direction: column;
+            }
+
+                #homeScroll > div > div:first-child {
+                    padding: 20px !important;
+                }
+
+                #homeScroll > div > div:last-child {
+                    width: 100% !important;
+                }
+
+            /* Discount Cards */
+            .col-sm-6.d-flex {
+                margin-bottom: 80px !important;
+            }
+
+            .card > div:first-child {
+                top: -55px !important;
+            }
+
+            /* Easy Quote Section */
+            .component-container {
+                padding: 30px 15px !important;
+                height: auto !important;
+            }
+
+            section[style*="height: 100vh"] {
+                height: auto !important;
+                padding: 40px 0 !important;
+            }
+
+            /* Why Choose Section */
+            .why-choose-section .section-title {
+                font-size: 28px !important;
+            }
+
+            .why-choose-section .section-text {
+                font-size: 16px !important;
+            }
+
+            .feature-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+                .feature-content .col-md-4,
+                .feature-content .col-md-8 {
+                    width: 100% !important;
+                    padding: 0 !important;
+                }
+
+            .feature-description {
+                margin-top: 10px;
+            }
+
+            /* Final Quote Section */
+            .quote-box {
+                flex-direction: column;
+                text-align: center;
+            }
+
+                .quote-box .quote-image {
+                    margin-right: 0;
+                    margin-bottom: 20px;
+                }
+
+            .quote-section p[style*="margin-top: 150px"] {
+                margin-top: 50px !important;
+            }
+
+            .step-item3 {
+                padding-right: 33px !important;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .why-choose-icon {
+                margin-bottom: 0 !important;
+                margin-top: 30px;
+            }
+
+            .why-choose-icon1 {
+                margin-top: 0 !important;
+            }
+        }
+
+        @media (max-width: 576px) {
+            /* Further adjustments for very small screens */
+            .form-row {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+                .form-row .form-control,
+                .form-row select,
+                .form-row button {
+                    width: 100% !important;
+                    min-width: 100% !important;
+                }
+
+            .quote-form {
+                flex-direction: column;
+            }
+
+                .quote-form select,
+                .quote-form input,
+                .quote-form button {
+                    width: 100%;
+                }
+
+            /* Icon gaps */
+            .insurance-hero .icon-row {
+                gap: 20px !important;
+            }
+
+            .step-number {
+                width: 40px;
+                height: 40px;
+                font-size: 18px;
+            }
+
+            .step-text {
+                font-size: 16px !important;
+            }
+        }
+
+        @media (max-width: 510px) {
+            .contact {
+                width: 100%;
+                text-align: center !important;
+            }
+
+            .logo {
+                margin: auto;
+            }
+        }
     </style>
-  </head>
+</head>
   <body>
    
 <!-- Header -->
@@ -676,10 +685,10 @@ input::placeholder {
             </div>
         </div>
 
-        <h2 style="padding-left: 50px; font-size: clamp(28px, 4vw, 48px); margin-bottom: 20px; line-height: 1.2; color: rgb(153, 4, 3); font-weight: bold;">Mercury Insurance, over 50 years of saving you money</h2>
+        <h2 style="padding-left: 50px; font-size: clamp(28px, 4vw, 48px); margin-bottom: 20px; line-height: 1.2; color: rgb(153, 4, 3); font-weight: bold; margin-top: 50px;">Mercury Insurance, over 50 years of saving you money</h2>
         <p style="padding-left: 50px; font-size: clamp(14px, 1.5vw, 16px); line-height: 1.6; margin-bottom: 40px; color: #333;">When you're able to save money and maintain quality coverage, everybody comes out a winner. Whether you're looking for auto insurance or just about any other insurance, there is something to fit your budget with Mercury.</p>
 
-        <div class="cta" style="font-size: clamp(20px, 2.5vw, 28px); font-weight: bold; margin-bottom: 10px; color: rgb(153, 4, 3); padding-left: 50px;">Get a free online quote</div>
+        <div class="cta" style="font-size: clamp(20px, 2.5vw, 28px); font-weight: bold; margin-bottom: 10px; color: rgb(153, 4, 3); padding-left: 50px; margin-top: 50px;">Get a free online quote</div>
         <p style="font-size: clamp(13px, 1.5vw, 15px); margin-bottom: 20px; color: #333; padding-left: 50px;">It only takes a few minutes. Results are sent straight to your inbox.</p>
 
         <form style="display: flex; gap: 10px; flex-wrap: wrap; padding-left: 50px;">
@@ -703,20 +712,20 @@ input::placeholder {
     <div class="row text-center" style="padding-top: 200px;">
       <div class="col-md-4 mb-4">
         <img src="images/MLP 1.png" alt="" class="img-fluid mb-3" style="color: not-a-color; height: 125px; width: 125px; border-radius: 50%; object-fit: cover; border: 2px solid black;">
-        <h3 style="padding-top: 10px; font-weight: bold; margin-bottom: 0; color: rgb(153, 4, 3); font-size: 24px !important;">55+</h3>
-        <h3 style="font-weight: bold; margin-top: 0; color: rgb(153, 4, 3); font-size: 24px !important;">YEARS</h3>
+        <h3 style="padding-top: 10px; font-weight: bold; margin-bottom: 0; color: rgb(153, 4, 3); font-size: 30px !important;">55+</h3>
+        <h3 style="font-weight: bold; margin-top: 0; color: rgb(153, 4, 3); font-size: 30px !important;">YEARS</h3>
         <p style="font-size: 16px; line-height: 12px; color: black; line-height: inherit;">of insurance experience <br> and excellent customer <br> service.</p>
       </div>
       <div class="col-md-4 mb-4">
         <img src="images/MLP2.png" alt="" class="img-fluid mb-3" style="color: not-a-color; height: 125px; width: 125px; border-radius: 50%; object-fit: cover; border: 2px solid black;">
-        <h3 style="padding-top: 10px; font-weight: bold; margin-bottom: 0; color: rgb(153, 4, 3); font-size: 24px !important;">OVER</h3>
-        <h3 style="font-weight: bold; margin-top: 0; color: rgb(153, 4, 3); font-size: 24px !important;">$650</h3>
+        <h3 style="padding-top: 10px; font-weight: bold; margin-bottom: 0; color: rgb(153, 4, 3); font-size: 30px !important;">OVER</h3>
+        <h3 style="font-weight: bold; margin-top: 0; color: rgb(153, 4, 3); font-size: 30px !important;">$650</h3>
         <p style="font-size: 16px; line-height: 12px; color: black; line-height: inherit;">in average annual savings <br> for new customers who <br> switch to AIS.</p>
       </div>
       <div class="col-md-4 mb-4">
         <img src="images/MLP3.png" alt="" class="img-fluid mb-3" style="color: not-a-color; height: 125px; width: 125px; border-radius: 50%; object-fit: cover; border: 2px solid black;">
-        <h3 style="padding-top: 10px; font-weight: bold; margin-bottom: 0; color: rgb(153, 4, 3); font-size: 24px !important;">MORE THAN</h3>
-        <h3 style="font-weight: bold; margin-top: 0; color: rgb(153, 4, 3); font-size: 24px !important;">350,000</h3>
+        <h3 style="padding-top: 10px; font-weight: bold; margin-bottom: 0; color: rgb(153, 4, 3); font-size: 30px !important;">MORE THAN</h3>
+        <h3 style="font-weight: bold; margin-top: 0; color: rgb(153, 4, 3); font-size: 30px !important;">350,000</h3>
         <p style="font-size: 16px; line-height: 12px; color: black; line-height: inherit;">5 star reviews and happy <br> customers across all <br> 50 states.</p>
       </div>
     </div>
@@ -773,7 +782,7 @@ input::placeholder {
   <div style="margin: 0 auto; padding: 250px 20px; width: 60%;">
     <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 20px;">
       <div style="flex: 1; min-width: 280px; text-align: center; margin-bottom: 20px;">
-        <img src="images/MLP4.png" alt="" style="width: 100%; max-width: 300px; height: auto; aspect-ratio: 1/1; object-fit: cover; border-radius: 50%;">
+        <img src="images/MLP4.png" alt="" style="width: 100%; width: 350px; height: auto; aspect-ratio: 1/1; object-fit: cover; border-radius: 50%;">
       </div>
       <div style="flex: 2; min-width: 300px;">
         <h2 style="font-size: clamp(28px, 5vw, 44px); font-weight: bold; color: rgb(153, 4, 3); margin-bottom: 20px;">
@@ -810,7 +819,7 @@ input::placeholder {
     <!-- Card Row 1 -->
     <div class="row">
       <div class="col-md-6 col-12 mb-4 d-md-flex">
-        <div class="card flex-fill h-100 d-flex flex-column" style="background-color: #fff; border-radius: 4px; padding: 20px; margin-bottom: 40px; min-height: 400px;">
+        <div class="card flex-fill h-100 d-flex flex-column" style="background-color: #fff; border-radius: 4px; padding: 20px; margin-bottom: 40px; height: 460px;">
           <img src="images/MLPIcon4.png" style="height: 45px; width: 50px;">
           <h3 style="color: #003366; font-weight: bold; font-size: 20px !important;">LIABILITY</h3>
           <p style="color: #333;">
@@ -828,7 +837,7 @@ input::placeholder {
       </div>
 
       <div class="col-md-6 col-12 mb-4 d-md-flex">
-        <div class="card flex-fill h-100 d-flex flex-column" style="background-color: #fff; border-radius: 4px; padding: 20px; min-height: 398px; margin-bottom: 40px; min-height: 400px;">
+        <div class="card flex-fill h-100 d-flex flex-column" style="background-color: #fff; border-radius: 4px; padding: 20px; min-height: 398px; margin-bottom: 40px; height: 460px;">
           <img src="images/MLPIcon4.png" style="height: 45px; width: 50px;">
           <h3 style="color: #003366; font-weight: bold; font-size: 20px !important;">COMPREHENSIVE</h3>
           <p style="color: #333;">
@@ -849,7 +858,7 @@ input::placeholder {
     <!-- Card Row 2 -->
     <div class="row">
       <div class="col-md-6 col-12 mb-4 d-md-flex">
-        <div class="card flex-fill h-100 d-flex flex-column" style="background-color: #fff; border-radius: 4px; padding: 20px; min-height: 398px; margin-bottom: 40px; min-height: 400px;">
+        <div class="card flex-fill h-100 d-flex flex-column" style="background-color: #fff; border-radius: 4px; padding: 20px; min-height: 398px; margin-bottom: 40px; height: 460px;">
           <img src="images/MLPIcon4.png" style="height: 45px; width: 50px;">
           <h3 style="color: #003366; font-weight: bold; font-size: 20px !important;">COLLISION</h3>
           <p style="color: #333;">
@@ -867,7 +876,7 @@ input::placeholder {
       </div>
 
       <div class="col-md-6 col-12 mb-4 d-md-flex">
-        <div class="card flex-fill h-100 d-flex flex-column" style="background-color: #fff; border-radius: 4px; padding: 20px; margin-bottom: 40px; min-height: 400px;">
+        <div class="card flex-fill h-100 d-flex flex-column" style="background-color: #fff; border-radius: 4px; padding: 20px; margin-bottom: 40px; height: 460px;">
           <img src="images/MLPIcon4.png" style="height: 45px; width: 50px;">
           <h3 style="color: #003366; font-weight: bold; font-size: 20px !important;">UNINSURED/UNDERINSURED</h3>
           <p style="color: #333;">
